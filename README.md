@@ -364,7 +364,7 @@ Previous campaign success is the strongest predictor of future subscription beha
 
 ---
 
-# 📋 Recommendations
+# Recommendations
 
 ## Recommendation 1
 
@@ -461,9 +461,9 @@ This project demonstrates how customer and campaign data can be transformed into
 
 ### Connect With Me
 
-- LinkedIn: [linkedin.com/in/analystay]
-- GitHub: [Your GitHub URL]
-- Portfolio: [Your Portfolio URL]
+- [LinkedIn] (linkedin.com/in/analystay)
+- [GitHub]: (Your GitHub URL)
+- [Portfolio]: (Your Portfolio URL)
 
 ---
 
