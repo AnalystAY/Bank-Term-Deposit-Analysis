@@ -1,325 +1,470 @@
-📊 Bank Term Deposit Marketing Analysis
+# 📊 Bank Term Deposit Marketing Analysis
 
-"Power BI" (https://img.shields.io/badge/Tool-Power%20BI-yellow)
-"SQL" (https://img.shields.io/badge/Tool-SQL-blue)
-"Excel" (https://img.shields.io/badge/Tool-Excel-green)
-"Status" (https://img.shields.io/badge/Status-Completed-success)
-
-📌 Project Overview
-
-Banks invest heavily in telemarketing campaigns to promote term deposit subscriptions. Since outbound calling is expensive and resource-intensive, identifying customers with a higher likelihood of subscribing can significantly improve campaign effectiveness and reduce marketing costs.
-
-This project analyzes over 45,000 customer records from a Portuguese banking institution to uncover customer characteristics, campaign factors, and behavioral patterns associated with successful term deposit subscriptions.
-
-The analysis was conducted using Excel, SQL, and Power BI to simulate a real-world business analytics workflow from data exploration to executive reporting.
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
+![SQL](https://img.shields.io/badge/SQL-Analysis-blue)
+![Excel](https://img.shields.io/badge/Excel-Data%20Cleaning-green)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
 ---
 
-🎯 Business Problem
+# 📌 Project Overview
 
-The bank needs to answer the following questions:
+This project analyzes customer and campaign data from a Portuguese banking institution to understand the factors influencing term deposit subscriptions.
 
-- Which customer segments are most likely to subscribe to a term deposit?
-- What campaign factors influence conversion?
+Banks spend significant resources on telemarketing campaigns. Identifying customers most likely to subscribe can improve marketing efficiency, reduce campaign costs, and increase conversion rates.
+
+Using Excel, SQL, and Power BI, this project explores customer demographics, financial behavior, campaign performance, and previous marketing outcomes to generate actionable business insights.
+
+---
+
+# 🎯 Business Problem
+
+The bank wants to improve the effectiveness of its telemarketing campaigns by answering the following questions:
+
+- Which customers are most likely to subscribe to a term deposit?
+- Which customer segments should be prioritized?
+- How effective are different communication channels?
+- Does previous campaign success influence future subscriptions?
+- What factors drive conversion?
+
+---
+
+# 📂 Dataset Information
+
+| Attribute | Value |
+|------------|---------|
+| Dataset | Bank Marketing Dataset |
+| Source | UCI Machine Learning Repository |
+| Records | 45,211 |
+| Features | 17 |
+| Target Variable | Term Deposit Subscription |
+
+### Target Variable
+
+| Value | Meaning |
+|---------|---------|
+| Yes | Customer subscribed |
+| No | Customer did not subscribe |
+
+---
+
+# 🛠️ Tools Used
+
+| Tool | Purpose |
+|--------|---------|
+| Excel | Data Cleaning & Exploratory Data Analysis |
+| SQL | Business Analysis |
+| Power BI | Dashboard Development |
+| GitHub | Project Documentation |
+
+---
+
+# 🔄 Project Workflow
+
+```text
+Business Understanding
+        ↓
+Data Cleaning
+        ↓
+Exploratory Data Analysis
+        ↓
+SQL Analysis
+        ↓
+Power BI Dashboard
+        ↓
+Business Recommendations
+```
+
+---
+
+# 📈 Key Performance Indicators
+
+| KPI | Value |
+|------|------|
+| Total Customers | 45,211 |
+| Subscribers | 5,289 |
+| Non-Subscribers | 39,922 |
+| Conversion Rate | 11.70% |
+
+### Key Observation
+
+Only about 1 out of every 9 customers subscribed to a term deposit, highlighting the importance of targeted marketing.
+
+---
+
+# 🧹 Data Cleaning
+
+The dataset underwent quality checks before analysis.
+
+### Data Quality Results
+
+| Check | Result |
+|---------|---------|
+| Missing Values | None |
+| Duplicate Records | None Detected |
+| Invalid Data Types | Corrected |
+| Data Consistency | Verified |
+
+---
+
+# 🔍 Exploratory Data Analysis
+
+## Customer Occupation Analysis
+
+### Top Converting Occupations
+
+| Occupation | Conversion Rate |
+|------------|----------------|
+| Student | 28.68% |
+| Retired | 22.79% |
+| Unemployed | 15.50% |
+| Management | 13.76% |
+| Admin | 12.20% |
+
+### Insight
+
+Students converted at more than double the overall conversion rate.
+
+### Business Interpretation
+
+Students and retirees appear more receptive to savings and investment products.
+
+---
+
+## Education Analysis
+
+| Education Level | Conversion Rate |
+|----------------|----------------|
+| Tertiary | 15.01% |
+| Unknown | 13.57% |
+| Secondary | 10.56% |
+| Primary | 8.63% |
+
+### Insight
+
+Customers with tertiary education demonstrated the strongest conversion performance.
+
+### Business Interpretation
+
+Financial literacy may contribute to increased adoption of investment products.
+
+---
+
+## Housing Loan Analysis
+
+| Housing Loan | Conversion Rate |
+|--------------|----------------|
+| No | 16.70% |
+| Yes | 7.70% |
+
+### Insight
+
+Customers without housing loans converted at more than twice the rate of customers with housing loans.
+
+### Business Interpretation
+
+Customers with fewer financial obligations may have greater disposable income available for investments.
+
+---
+
+## Personal Loan Analysis
+
+| Personal Loan | Conversion Rate |
+|---------------|----------------|
+| No | 12.66% |
+| Yes | 6.68% |
+
+### Insight
+
+Customers with personal loans were significantly less likely to subscribe.
+
+### Business Interpretation
+
+Existing debt appears to reduce willingness to commit funds to long-term savings products.
+
+---
+
+# 📞 Campaign Performance Analysis
+
+## Contact Method Analysis
+
+| Contact Type | Conversion Rate |
+|--------------|----------------|
+| Cellular | 14.92% |
+| Telephone | 13.42% |
+| Unknown | 4.07% |
+
+### Insight
+
+Cellular communication generated the highest conversion rates.
+
+### Business Interpretation
+
+Mobile communication channels should be prioritized for future campaigns.
+
+---
+
+## Call Duration Analysis
+
+| Outcome | Average Duration |
+|----------|----------------|
+| Subscribed | 537 Seconds |
+| Not Subscribed | 221 Seconds |
+
+### Insight
+
+Successful conversions were associated with significantly longer conversations.
+
+### Business Interpretation
+
+Customer engagement plays a major role in conversion success.
+
+---
+
+# 📅 Monthly Campaign Performance
+
+## Top Performing Months
+
+| Month | Conversion Rate |
+|--------|----------------|
+| March | 51.99% |
+| December | 46.73% |
+| September | 46.46% |
+| October | 43.77% |
+
+### Insight
+
+Subscription behavior varies considerably across the year.
+
+### Business Interpretation
+
+Campaign timing can significantly impact performance.
+
+---
+
+# 🔄 Previous Campaign Analysis
+
+## Previous Campaign Outcome
+
+| Outcome | Conversion Rate |
+|----------|----------------|
+| Success | 64.73% |
+| Other | 16.68% |
+| Failure | 12.61% |
+| Unknown | 9.16% |
+
+### Insight
+
+Customers who previously responded positively were over five times more likely to subscribe again.
+
+### Business Interpretation
+
+Previous campaign success is the strongest predictor of future conversion.
+
+---
+
+# 🧮 SQL Analysis
+
+The SQL phase focused on answering business questions related to customer segmentation, campaign effectiveness, and conversion drivers.
+
+### Key SQL Questions
+
+- Which occupation has the highest conversion rate?
+- Which months produce the highest conversions?
+- Does loan status affect customer behavior?
 - Which communication channels perform best?
-- How can marketing resources be allocated more effectively?
-- What actionable insights can increase subscription rates?
+- How does previous campaign success influence future outcomes?
+
+Example queries can be found in:
+
+```text
+/sql/business_queries.sql
+```
 
 ---
 
-🛠️ Tools Used
+# 📊 Power BI Dashboard
 
-Tool| Purpose
-Microsoft Excel| Data Cleaning & Exploratory Analysis
-SQL| Business Querying & Data Investigation
-Power BI| Dashboard Development & Visualization
-GitHub| Project Documentation & Portfolio Hosting
+The dashboard was designed for business stakeholders and marketing managers.
 
----
+## Dashboard Pages
 
-📂 Dataset Information
+### Executive Summary
 
-Dataset: Bank Marketing Dataset
-
-Source: UCI Machine Learning Repository
-
-Records: 45,211
-
-Features: 17
-
-Target Variable: "y"
-
-- Yes = Customer subscribed to a term deposit
-- No = Customer did not subscribe
-
-Dataset Citation
-
-Moro, S., Cortez, P., & Rita, P. (2014).
-
-A Data-Driven Approach to Predict the Success of Bank Telemarketing.
-
-Decision Support Systems, Elsevier, 62:22–31.
-
----
-
-🔍 Project Workflow
-
-Phase 1 — Business Understanding
-
-Understanding the bank's marketing objectives and identifying key performance indicators.
-
-Phase 2 — Data Cleaning (Excel)
-
-- Checked for missing values
-- Reviewed data types
-- Identified outliers
-- Verified categorical variables
-- Performed preliminary segmentation analysis
-
-Phase 3 — SQL Analysis
-
-Developed business-focused queries to answer strategic questions:
-
-- Which jobs convert best?
-- Which months perform best?
-- Does loan status affect subscriptions?
-- How important is previous campaign success?
-- Which contact methods are most effective?
-
-Phase 4 — Power BI Dashboard
-
-Built an executive dashboard showing:
-
-- Customer Segmentation
-- Conversion Analysis
-- Campaign Performance
-- Marketing Insights
-- Subscription Trends
-
-Phase 5 — Business Recommendations
-
-Translated analytical findings into actionable recommendations for decision-makers.
-
----
-
-📈 Key Performance Indicators (KPIs)
-
-KPI| Value
-Total Customers| 45,211
-Total Subscribers| 5,289
-Conversion Rate| 11.7%
-Non-Subscribers| 39,922
-Features Analyzed| 17
-
----
-
-💡 Key Insights
-
-1️⃣ Customer Occupation Matters
-
-Students and retired customers demonstrated significantly higher subscription rates than other occupational groups.
-
-Business Impact
-
-Marketing campaigns should prioritize these customer segments to maximize conversion efficiency.
-
----
-
-2️⃣ Previous Campaign Success Is a Strong Predictor
-
-Customers who previously responded positively to a marketing campaign were far more likely to subscribe again.
-
-Business Impact
-
-These customers should be prioritized in future outreach campaigns.
-
----
-
-3️⃣ Contact Method Influences Conversion
-
-Cellular communication channels achieved higher conversion rates than traditional telephone contact.
-
-Business Impact
-
-Future campaigns should emphasize mobile communication strategies.
-
----
-
-4️⃣ Existing Debt Reduces Subscription Likelihood
-
-Customers with housing loans and personal loans were less likely to invest in term deposits.
-
-Business Impact
-
-Marketing resources may be more effective when focused on customers with lower debt obligations.
-
----
-
-5️⃣ Longer Conversations Lead to Better Outcomes
-
-Customers who subscribed generally participated in longer conversations with bank representatives.
-
-Business Impact
-
-Investing in quality customer engagement may improve conversion rates.
-
----
-
-6️⃣ Campaign Timing Matters
-
-Certain months consistently outperformed others in terms of conversion rates.
-
-Business Impact
-
-Campaign budgets should be optimized around historically high-performing periods.
-
----
-
-📊 Dashboard Preview
-
-Executive Dashboard
-
-Key Metrics
-
+KPIs:
 - Total Customers
 - Subscribers
 - Conversion Rate
 - Average Balance
 - Average Call Duration
 
-Visualizations
+### Customer Insights
 
-- Subscription Distribution
-- Customer Segmentation
-- Monthly Conversion Trend
-- Job Category Performance
-- Loan Status Analysis
-- Campaign Performance Analysis
+Visualizations:
+- Occupation Analysis
+- Education Analysis
+- Marital Status Analysis
+- Loan Analysis
 
----
+### Campaign Performance
 
-📸 Dashboard Screenshots
-
-Executive Overview
-
-"Executive Dashboard" (images/dashboard-overview.png)
-
-Customer Segmentation
-
-"Customer Segmentation" (images/customer-segmentation.png)
-
-Campaign Performance
-
-"Campaign Performance" (images/campaign-performance.png)
+Visualizations:
+- Contact Method Performance
+- Monthly Conversion Trends
+- Campaign Success Analysis
+- Previous Outcome Analysis
 
 ---
 
-🧮 Sample SQL Analysis
+# 📸 Dashboard Screenshots
 
-Conversion Rate by Job
+## Executive Dashboard
 
-SELECT
-    job,
-    ROUND(
-        SUM(CASE WHEN y='yes' THEN 1 ELSE 0 END) * 100.0
-        / COUNT(*),2
-    ) AS conversion_rate
-FROM bank
-GROUP BY job
-ORDER BY conversion_rate DESC;
+![Executive Dashboard](images/executive-dashboard.png)
 
 ---
 
-Conversion Rate by Previous Campaign Outcome
-```sql
-SELECT
-    poutcome,
-    ROUND(
-        SUM(CASE WHEN y='yes' THEN 1 ELSE 0 END) * 100.0
-        / COUNT(*),2
-    ) AS conversion_rate
-FROM bank
-GROUP BY poutcome
-ORDER BY conversion_rate DESC;
-```
+## Customer Analysis Dashboard
+
+![Customer Dashboard](images/customer-analysis.png)
+
 ---
 
-📋 Business Recommendations
+## Campaign Performance Dashboard
 
-Recommendation 1
+![Campaign Dashboard](images/campaign-performance.png)
 
-Prioritize customer segments with historically high conversion rates such as students and retirees.
+---
 
-Recommendation 2
+# 💡 Key Findings
 
-Implement customer retargeting strategies for individuals who previously responded positively to campaigns.
+### Finding 1
 
-Recommendation 3
+Students and retirees are the most responsive customer groups.
+
+### Finding 2
+
+Customers without loans convert significantly better than customers with active debt.
+
+### Finding 3
+
+Cellular communication outperforms traditional telephone contact.
+
+### Finding 4
+
+Longer customer conversations are strongly associated with successful conversions.
+
+### Finding 5
+
+Campaign timing significantly impacts conversion rates.
+
+### Finding 6
+
+Previous campaign success is the strongest predictor of future subscription behavior.
+
+---
+
+# 📋 Recommendations
+
+## Recommendation 1
+
+Prioritize students and retirees in future telemarketing campaigns.
+
+### Expected Impact
+
+Higher conversion rates with lower marketing costs.
+
+---
+
+## Recommendation 2
+
+Implement retargeting strategies for customers who previously subscribed.
+
+### Expected Impact
+
+Improved campaign ROI.
+
+---
+
+## Recommendation 3
 
 Increase investment in mobile communication channels.
 
-Recommendation 4
+### Expected Impact
 
-Develop specialized messaging for customers with active loans.
-
-Recommendation 5
-
-Schedule campaigns during historically high-performing months.
+Higher engagement and improved conversion rates.
 
 ---
 
-📚 Skills Demonstrated
+## Recommendation 4
 
-✅ Data Cleaning
+Create specialized offers for customers with existing loans.
 
-✅ Exploratory Data Analysis (EDA)
+### Expected Impact
 
-✅ Customer Segmentation
-
-✅ SQL Query Development
-
-✅ Data Visualization
-
-✅ Dashboard Design
-
-✅ KPI Development
-
-✅ Business Intelligence
-
-✅ Data Storytelling
-
-✅ Business Recommendation Framework
+Improved relevance and customer response.
 
 ---
 
-🚀 Project Outcomes
+## Recommendation 5
 
-This project demonstrates how data analytics can help financial institutions:
+Increase campaign activity during historically high-performing months.
 
-- Improve campaign effectiveness
-- Reduce telemarketing costs
-- Increase conversion rates
-- Better understand customer behavior
-- Make data-driven marketing decisions
+### Expected Impact
+
+Better resource utilization and campaign effectiveness.
 
 ---
 
-👤 Author
+# 📚 Skills Demonstrated
 
-Ayomide Idowu
+### Data Analytics
 
-Certified Data Analyst
+- Data Cleaning
+- Exploratory Data Analysis
+- Customer Segmentation
+- KPI Analysis
 
-Connect With Me
+### SQL
 
-- LinkedIn: [Add LinkedIn URL]
-- GitHub: [Add GitHub URL]
-- Portfolio: [Add Portfolio URL]
+- Aggregations
+- CASE Statements
+- Grouping & Filtering
+- Business Reporting Queries
+
+### Power BI
+
+- Dashboard Development
+- Data Modeling
+- DAX Measures
+- Interactive Reporting
+
+### Business Intelligence
+
+- Data Storytelling
+- Insight Generation
+- Strategic Recommendations
 
 ---
 
-⭐ If You Found This Project Useful
+# 🚀 Project Outcome
 
-Please consider giving this repository a star.
+This project demonstrates how customer and campaign data can be transformed into actionable business insights that improve marketing efficiency, increase subscription rates, and support data-driven decision-making.
 
-It helps support my data analytics learning journey and showcases the project to other learners and recruiters.Before publishing:
+---
+
+# 👤 Author
+
+## Queen Esther
+
+**Data Analyst | Excel | SQL | Power BI**
+
+### Connect With Me
+
+- LinkedIn: [Your LinkedIn URL]
+- GitHub: [Your GitHub URL]
+- Portfolio: [Your Portfolio URL]
+
+---
+
+⭐ If you found this project useful, consider giving the repository a star.
