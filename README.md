@@ -7,7 +7,7 @@
 
 ---
 
-# 📌 Project Overview
+# Project Overview
 
 This project analyzes customer and campaign data from a Portuguese banking institution to understand the factors influencing term deposit subscriptions.
 
@@ -17,7 +17,7 @@ Using Excel, SQL, and Power BI, this project explores customer demographics, fin
 
 ---
 
-# 🎯 Business Problem
+# Business Problem
 
 The bank wants to improve the effectiveness of its telemarketing campaigns by answering the following questions:
 
@@ -29,7 +29,7 @@ The bank wants to improve the effectiveness of its telemarketing campaigns by an
 
 ---
 
-# 📂 Dataset Information
+# Dataset Information
 
 | Attribute | Value |
 |------------|---------|
@@ -48,7 +48,7 @@ The bank wants to improve the effectiveness of its telemarketing campaigns by an
 
 ---
 
-# 🛠️ Tools Used
+# Tools Used
 
 | Tool | Purpose |
 |--------|---------|
@@ -59,7 +59,7 @@ The bank wants to improve the effectiveness of its telemarketing campaigns by an
 
 ---
 
-# 🔄 Project Workflow
+# Project Workflow
 
 ```text
 Business Understanding
@@ -77,7 +77,7 @@ Business Recommendations
 
 ---
 
-# 📈 Key Performance Indicators
+# Key Performance Indicators
 
 | KPI | Value |
 |------|------|
@@ -92,7 +92,7 @@ Only about 1 out of every 9 customers subscribed to a term deposit, highlighting
 
 ---
 
-# 🧹 Data Cleaning
+# Data Cleaning
 
 The dataset underwent quality checks before analysis.
 
@@ -107,7 +107,7 @@ The dataset underwent quality checks before analysis.
 
 ---
 
-# 🔍 Exploratory Data Analysis
+# Exploratory Data Analysis
 
 ## Customer Occupation Analysis
 
@@ -184,7 +184,7 @@ Existing debt appears to reduce willingness to commit funds to long-term savings
 
 ---
 
-# 📞 Campaign Performance Analysis
+# Campaign Performance Analysis
 
 ## Contact Method Analysis
 
@@ -221,7 +221,7 @@ Customer engagement plays a major role in conversion success.
 
 ---
 
-# 📅 Monthly Campaign Performance
+# Monthly Campaign Performance
 
 ## Top Performing Months
 
@@ -242,7 +242,7 @@ Campaign timing can significantly impact performance.
 
 ---
 
-# 🔄 Previous Campaign Analysis
+# Previous Campaign Analysis
 
 ## Previous Campaign Outcome
 
@@ -263,7 +263,7 @@ Previous campaign success is the strongest predictor of future conversion.
 
 ---
 
-# 🧮 SQL Analysis
+# SQL Analysis
 
 The SQL phase focused on answering business questions related to customer segmentation, campaign effectiveness, and conversion drivers.
 
@@ -283,7 +283,7 @@ Example queries can be found in:
 
 ---
 
-# 📊 Power BI Dashboard
+# Power BI Dashboard
 
 The dashboard was designed for business stakeholders and marketing managers.
 
@@ -316,7 +316,7 @@ Visualizations:
 
 ---
 
-# 📸 Dashboard Screenshots
+# Dashboard Screenshots
 
 ## Executive Dashboard
 
@@ -336,7 +336,7 @@ Visualizations:
 
 ---
 
-# 💡 Key Findings
+# Key Findings
 
 ### Finding 1
 
@@ -416,7 +416,7 @@ Better resource utilization and campaign effectiveness.
 
 ---
 
-# 📚 Skills Demonstrated
+# Skills Demonstrated
 
 ### Data Analytics
 
@@ -447,21 +447,21 @@ Better resource utilization and campaign effectiveness.
 
 ---
 
-# 🚀 Project Outcome
+# Project Outcome
 
 This project demonstrates how customer and campaign data can be transformed into actionable business insights that improve marketing efficiency, increase subscription rates, and support data-driven decision-making.
 
 ---
 
-# 👤 Author
+# Author
 
-## Queen Esther
+## Ayomide Idowu
 
 **Data Analyst | Excel | SQL | Power BI**
 
 ### Connect With Me
 
-- LinkedIn: [Your LinkedIn URL]
+- LinkedIn: [linkedin.com/in/analystay]
 - GitHub: [Your GitHub URL]
 - Portfolio: [Your Portfolio URL]
 
