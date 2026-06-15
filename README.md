@@ -461,7 +461,7 @@ This project demonstrates how customer and campaign data can be transformed into
 
 ### Connect With Me
 
-- [LinkedIn] (linkedin.com/in/analystay)
+- [LinkedIn](linkedin.com/in/analystay)
 - [GitHub]: (Your GitHub URL)
 - [Portfolio]: (Your Portfolio URL)
 
