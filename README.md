@@ -1,6 +1,6 @@
-# 📊 Bank Term Deposit Marketing Analysis
+# Bank Term Deposit Marketing Analysis
 
-![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
+![Power BI]
 ![SQL](https://img.shields.io/badge/SQL-Analysis-blue)
 ![Excel](https://img.shields.io/badge/Excel-Data%20Cleaning-green)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
